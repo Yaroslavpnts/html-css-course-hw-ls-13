@@ -1,0 +1,266 @@
+
+@media  (max-width: 1192px) {
+
+   body {
+      min-width: 100%;
+   }
+
+   .header-page,
+   .about-us,
+   .portfolio,
+   .text-box,
+   .clients,
+   .footer,
+   .clients-list {
+      width: 100%;
+      min-width: 100%; 
+   }
+
+   .portfolio {
+      padding: 70px 0;
+  }
+
+   .portfolio-list {
+      justify-content: center;
+   }
+
+   .portfolio-list li {
+      margin-right: 30px;
+   }
+
+   .footer {
+      padding-left: 30px;
+   }
+}
+
+@media  (max-width: 1091px) {
+   .clients-list {
+      justify-content: space-around;
+   }
+
+   /* .contact-us form {
+      width: 100%;
+   } */
+}
+
+@media  (max-width: 988px) {
+   .contact-us .form {
+      width: 100%;
+   }
+
+   .contact-us form {
+      width: 100%;
+   }
+
+   .form form .row .checkbox,
+   .form form .row .radio,
+   .form .row:nth-child(2) input[type="text"],
+   .form .row:nth-child(2) input[type="email"] {
+      width: 45%;
+   }
+
+   .contact-us {
+      padding: 0 40px;
+   }
+
+}
+
+@media (max-width: 860px) {
+   .about-us-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .about-us-list li {
+      margin-bottom: 50px;
+      width: 420px;
+      text-align: left;
+   }
+
+   .about-us, .portfolio {
+      padding-top: 50px;
+   }
+
+   .about-us-list li div.about-us-row {
+      justify-content: flex-start;
+   }
+
+   .text-box {
+      min-height: 350px;
+   }
+
+   
+   /*----------------BURGER-MENU----------------*/
+
+
+	.header-page nav ul.menu{
+		/* display: none; */
+      /* height: 0; */
+      position: absolute;
+      top: 100%;
+      right: 2000px;
+      transition: linear 1s;
+      width: 100%;
+      flex-direction: column;
+	}
+	
+   .header-page {
+      position: relative;
+   }
+
+	.trigger{
+		display: inline-block;
+		margin: 3px;
+		cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      z-index: 11;
+	}
+	
+	.trigger i {
+		display: block;
+		width: 40px;
+		height: 4px;
+		margin: 4px auto;
+		background: #000;
+	}
+	
+   .header-page nav ul.show li:last-child {
+      border-bottom: 1px solid #89898b;
+   }
+
+   .header-page nav ul.show li:last-child:hover {
+      border-bottom: none;
+   }
+
+   /* --------------------END OF Burger-menu ----------------------- */
+
+   /* form */
+
+   .contact-us form div.row {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .form .row:nth-child(2) input[type="text"], 
+   .form .row:nth-child(2) input[type="email"] {
+      width: 100%;
+   }
+
+   .form form .row .checkbox,
+   .form .row:nth-child(2) input[type="text"] {
+      margin-bottom: 20px;
+   }
+
+   .form form .row .checkbox,
+   .form form .row .radio {
+      display: flex;
+      flex-direction: column;
+   }
+  
+   .row.for-check .checkbox div:first-child, 
+   .row.for-check .radio div:first-child {
+      margin-right: 0;
+      margin-bottom: 20px;
+   }
+
+}
+
+@media (max-width: 700px) {
+   .clients-list {
+      flex-wrap: wrap;
+   }
+   .clients-list li {
+      width: 33%;
+      margin-bottom: 40px;
+   }
+
+   .front-page span:last-child {
+      font-size: 26px;
+   }
+
+   .front-page h1 {
+      margin-bottom: 60px;
+   }
+
+   .text-box h2 {
+      font-size: 20px;
+   }
+
+   .about-us h1, 
+   .portfolio h1,
+   .clients h1 {
+      margin-bottom: 80px;
+   }
+
+   .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center
+   }
+
+   .footer span {
+      width: 100%;
+      margin-bottom: 20px;
+   }
+
+   .social-media li:last-child {
+      margin-right: 0;
+   }
+   
+}
+
+@media (max-width: 530px) {
+   .text-box-wrapper {
+      padding: 0 30px;
+   }
+
+   .text-box h2 {
+      font-size: 16px;
+      font-weight: 700;
+   }
+
+   .clients-list li {
+      width: 50%;
+   }
+
+   .about-us-list {
+      padding: 0 5%;
+   }
+
+   .about-us-list li {
+      width: 100%;
+   }
+
+   .about-us-list li .number {
+      font-size: 18px;
+      line-height: 20px;
+   }
+
+   .about-us-list li p{
+      font-size: 13px;;
+   }
+
+   .form form div.for-check {
+      flex-direction: column;
+      align-items: center;
+   }
+ 
+   .form form .row .checkbox,
+   .form form .row .radio {
+      align-items: flex-start;
+      width: 100%;
+   }
+
+   .contact-us {
+      padding-top: 20px;
+   }
+
+   .portfolio-list li {
+      margin-right: 0;
+   }
+}
+
+

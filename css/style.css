@@ -95,6 +95,8 @@ body {
 	height: 46px;
 }
 
+
+
 .header-page nav ul {
    display: flex;
 }
@@ -114,6 +116,7 @@ body {
     transition: ease 0.3s;
     padding: 13px 20px;
     border: 1px solid transparent;
+    display: block;
 }
 
 .header-page nav li a.active {
@@ -124,6 +127,10 @@ body {
 .header-page nav li a:hover {
    border: 1px solid #ffe600;
    color: #131316;
+}
+
+.header-page nav li a:active {
+   background: #ffe600;
 }
 
 
@@ -360,7 +367,7 @@ body {
 }
 
 .clients{
-   width: 1174px;
+   max-width: 1174px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -385,7 +392,7 @@ body {
 
 .clients-list {
    display: flex;
-   min-width: 1084px;
+   width: 1074px;
    justify-content: space-between;
    min-height: 61px;
    align-items: center;
@@ -694,4 +701,26 @@ footer.wrapper {
    display: block;
 }
 
-/* test for github */
+/* -------------------- Responsive (for Burger) --------------------- */
+
+.header-page-wrapper .header-page nav ul.show {
+   background: #fff;
+   /* width: 100%; */
+   right: 0;
+   z-index: 1;
+}
+
+.header-page nav ul.show li a {
+   width: 100%;
+   display: block;
+   text-align: center;
+   padding: 15px 20px;
+}
+
+.header-page nav ul.show li:not(:last-child) {
+   margin-right: 0;
+}
+
+/* .header-page nav ul.show li:last-child {
+   border-bottom: 1px solid #89898b;
+} */
