@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Document</title>
   </head>
   <body>
@@ -25,13 +26,20 @@
       <div class="header-page">
         <div class="logo"></div>
         <nav>
-          <ul>
+          <ul id="menu" class="menu">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Clients</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
+
+          <span id="trigger" class="trigger">
+			      <i></i>
+			      <i></i>
+			      <i></i>
+            <i></i>
+		      </span>
         </nav>
       </div>
     </div>
@@ -173,7 +181,7 @@
           </h2>
 
           <form action="#">
-            <fieldset>
+            <!-- <fieldset> -->
               <div class="row for-check">
                 <div class="checkbox">
                   <div>
@@ -209,7 +217,7 @@
               <div class="row">
                 <button type="submit" class="submit">SEND</button>
               </div>
-            </fieldset>
+            <!-- </fieldset> -->
           </form>
         </div>
       </div>
@@ -226,5 +234,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="js/burger.js"></script>
   </body>
 </html>
